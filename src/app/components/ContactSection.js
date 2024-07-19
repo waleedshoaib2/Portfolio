@@ -8,7 +8,7 @@ const ContactSection = () => {
     <section id="contact" className="bg-black py-20 text-center">
       <h2 className="text-5xl font-bold mb-6">Keep In Touch.</h2>
       <p className="text-lg mb-6 text-grey-400">
-        I'm currently specializing in <span className="text-green-400">Front-end Development.</span><br />
+        I&apos;m currently specializing in <span className="text-green-400">Front-end Development.</span><br />
         Feel free to get in touch and talk more about your projects.
       </p>
       <div className="flex justify-center space-x-6 mb-10">
