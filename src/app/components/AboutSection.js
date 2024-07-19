@@ -1,36 +1,29 @@
 'use client';
 
 import React from 'react';
-import { FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
-const ContactSection = () => {
+const AboutSection = () => {
   return (
-    <section id="contact" className="bg-black py-20 text-center">
-      <h2 className="text-5xl font-bold mb-6">Keep In Touch.</h2>
-      <p className="text-lg mb-6 text-grey-400">
-        I&apos;m currently specializing in <span className="text-green-400">Front-end Development.</span><br />
-        Feel free to get in touch and talk more about your projects.
-      </p>
-      <div className="flex justify-center space-x-6 mb-10">
-        <a href="https://linkedin.com" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center">
-          <FaLinkedin className="mr-2" /> 
-          LinkedIn
-        </a>
-        <a href="mailto:email@example.com" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center">
-          <FaEnvelope className="mr-2" /> 
-          Email
-        </a>
-        <a href="/path/to/resume.pdf" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center">
-          <FaFileAlt className="mr-2" /> 
-          Resume
-        </a>
+    <section id="about" className="mb-20 bg-black p-8 text-white slide-in-section">
+      <h2 className="text-3xl font-bold mb-6 slide-in">⚡ About Me</h2>
+      <div className="flex flex-col md:flex-row items-center slide-in">
+        <div className="text-md md:flex-1 mb-6 md:mb-0 leading-relaxed">
+          <p>
+            Inspired by Elliot Alderson in &quot;Mr. Robot,&quot; my journey in coding began with a fascination for the power and potential of technology. Originally on a pre-med track, I discovered my passion for coding and transitioned into software development. With three years of hands-on experience, I specialize in building robust, scalable applications.
+          </p>
+          <p className="mt-4">
+            My expertise includes Front-End Development with React.js and Next.js, Back-End Development with Node.js, and Full-Stack Development ensuring seamless integration. Driven by curiosity and a problem-solving mindset, I thrive on creating impactful software that meets user needs and pushes technological boundaries. I am also passionate about continuous learning and often engage in competitive programming and open-source projects to hone my skills.
+          </p>
+          <p className="mt-4">
+            In my free time, I enjoy playing games with friends, watching shows on Netflix, and playing football if the weather is good. I am excited about the future and the endless possibilities ahead. Let&apos;s connect and build the future together.
+          </p>
+        </div>
+        <div className="md:ml-8">
+          <img src="https://media.licdn.com/dms/image/D4D03AQGJ8kFyPB6n1Q/profile-displayphoto-shrink_800_800/0/1718558136116?e=1726704000&v=beta&t=8w3wihvnC2VuQCqZdW3qDkf8har6V0qBoLVAtwRS240" alt="Waleed Shoaib" width={300} height={300} className="rounded-full" />
+        </div>
       </div>
-      <p className="text-sm text-gray-400">
-        Designed and Developed by Waleed Shoaib.<br />
-        Built with <a href="https://nextjs.org/" className="text-green-400">Next.js</a> & <a href="https://chakra-ui.com/" className="text-green-400">Tailwind CSS</a>. Hosted on <a href="https://vercel.com/" className="text-green-400">Vercel</a>.
-      </p>
     </section>
   );
 };
 
-export default ContactSection;
+export default AboutSection;
