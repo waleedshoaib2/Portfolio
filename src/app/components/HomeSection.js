@@ -1,22 +1,23 @@
-"use client"
+"use client";
 
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 
 const HomeSection = () => {
   return (
     <section id="home" className="mb-20 bg-black mt-20 p-8 text-white slide-in-section">
       <h1 className="text-3xl text-green-400">
-        <Typical 
-          loop={Infinity}
-          wrapper="b"
-          steps={[
+        <TypeAnimation
+          sequence={[
             'Hey there!',
             1000,
             'Hey there! I\'m',
             2000,
           ]}
+          wrapper="b"
+          cursor={true}
+          repeat={Infinity}
         />
       </h1>
       <h2 className="text-8xl font-bold mt-4">Waleed Shoaib.</h2>
