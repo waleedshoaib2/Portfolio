@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from 'react';
 import { FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
@@ -12,15 +12,25 @@ const ContactSection = () => {
         Feel free to get in touch and talk more about your projects.
       </p>
       <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 mb-10">
-        <a href="https://linkedin.com" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">
+        <a
+          href="https://linkedin.com"
+          className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start"
+        >
           <FaLinkedin className="mr-2" /> 
           LinkedIn
         </a>
-        <a href="mailto:email@example.com" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">
+        <a
+          href="mailto:email@example.com"
+          className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start"
+        >
           <FaEnvelope className="mr-2" /> 
           Email
         </a>
-        <a href="/path/to/resume.pdf" className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">
+        <a
+          href="./waleed_cv.pdf"  // Update this path to the location of your PDF file
+          className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start"
+          download  // Optional: Add this attribute to prompt download
+        >
           <FaFileAlt className="mr-2" /> 
           Resume
         </a>

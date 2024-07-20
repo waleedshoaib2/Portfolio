@@ -4,6 +4,8 @@ date: "2024-07-20"
 ---
 
 
+![REACT](https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
 ## Introduction
 
 In the world of web development, the choice between Client-Side Rendering (CSR) and Server-Side Rendering (SSR) is a crucial one that significantly impacts the performance, SEO, and user experience of your application. Next.js, a popular React framework, empowers you to implement both strategies seamlessly, allowing you to select the best approach for your specific needs. This guide will illuminate the key differences between CSR and SSR, highlighting their strengths and weaknesses to help you make an informed decision, with a particular focus on why React's default CSR approach often falls short for SEO.

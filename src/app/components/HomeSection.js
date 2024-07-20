@@ -32,11 +32,13 @@ const HomeSection = () => {
 
       <div className="mt-6">
         <p className="flex items-center mb-2 text-xs md:text-base">
-          Currently specializing in Frontend (React / Next.js)
+          Currently specializing in Fullstack (React.js / Next.js/ Node.js/ Firestore / GCP / Graphql)
         </p>
         <p className="flex items-center text-xs md:text-base">
-          Frontend Engineer at <a href="#" className="text-green-400"> Objex</a>
-        </p>
+  Software Engineer at <a href="https://objex.tech/" className="text-green-400 ml-1">Objex</a>
+</p>
+
+
       </div>
       <div className="mt-6 flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
         <a href="https://github.com" className="bg-gray-900 px-4 py-2 rounded-md text-white hover:bg-gray-800 hover:text-green-400 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">

@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';  // Importing Next.js Link component
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,9 +33,8 @@ const Header = () => {
       <div className="flex justify-between items-center p-4 border-b border-gray-800">
         <div className="text-4xl font-bold">{"{W}"}</div>
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="hover:text-green-500">Home</a>
-          
-          <a href="#blog" className="hover:text-green-500">Blog</a>
+          <Link href="/" className="hover:text-green-500">Home</Link>  {/* Using Link component */}
+          <Link href="/blogs" className="hover:text-green-500">Blog</Link>  {/* Using Link component */}
         </div>
         <button className="md:hidden" onClick={toggleMenu}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -44,9 +44,8 @@ const Header = () => {
       </div>
       <nav ref={menuRef} className={`fixed right-0 top-0 h-full w-64 bg-black transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
         <div className="p-4">
-          <a href="#home" className="block py-2 hover:text-green-500">Home</a>
-          <a href="#projects" className="block py-2 hover:text-green-500">Projects</a>
-          <a href="#blog" className="block py-2 hover:text-green-500">Blog</a>
+          <Link href="/" className="block py-2 hover:text-green-500">Home</Link>  {/* Using Link component */}
+          <Link href="/blogs" className="block py-2 hover:text-green-500">Blog</Link>  {/* Using Link component */}
         </div>
       </nav>
     </header>
