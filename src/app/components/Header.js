@@ -33,7 +33,7 @@ const Header = () => {
         <div className="text-4xl font-bold">{"{W}"}</div>
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="hover:text-green-500">Home</a>
-          <a href="#projects" className="hover:text-green-500">Projects</a>
+          
           <a href="#blog" className="hover:text-green-500">Blog</a>
         </div>
         <button className="md:hidden" onClick={toggleMenu}>

@@ -1,35 +1,7 @@
-"use client";
-
 import React from 'react';
 import Link from 'next/link';
-
-const blogs = [
-  {
-    title: 'Unleash Your Dev Blog: Write More with GitHub Issues as Your CMS',
-    date: 'April 2 2024',
-    readTime: '3 min read',
-    link: '/blogs/sample-post',
-  },
-  {
-    title: 'Code Faster with Vim Shortcuts!',
-    date: 'July 18 2022',
-    readTime: '2 min read',
-    link: '/blogs/sample-post',
-  },
-  {
-    title: 'Easily Boost Your Productivity With Code Snippets',
-    date: 'September 22 2021',
-    readTime: '3 min read',
-    link: '/blogs/sample-post',
-  },
-  {
-    title: 'How I Make My First (real) Open Source Contribution',
-    date: 'June 20 2021',
-    readTime: '5 min read',
-    link: '/blogs/sample-post',
-  },
-  // Add more blog posts as needed
-];
+import { getAllPosts } from '../utils/markdown';
+const blogs = getAllPosts()
 
 const BlogSection = () => {
   return (
@@ -43,15 +15,18 @@ const BlogSection = () => {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        {blogs.map((blog, index) => (
+        {/* Display only the first 4 blogs */}
+        {blogs.slice(0, 4).map((blog, index) => (
           <div key={index} className="bg-black border border-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-            <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{blog.title}</h3>
+            <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{blog.frontmatter.title}</h3>
             <div className="text-gray-400 text-sm md:text-base mb-2">
-              {blog.date} • {blog.readTime}
+              {blog.frontmatter.date} • {blog.readTime}
             </div>
-            <Link href={blog.link} className="text-green-400 text-sm md:text-base hover:underline">
-              Read more →
-            </Link>
+
+            <Link href={`/blogs/${blog.slug}`} className="text-green-400 text-sm md:text-base hover:underline">
+                Read more →
+              </Link>
+            
           </div>
         ))}
       </div>
