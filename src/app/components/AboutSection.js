@@ -4,10 +4,10 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="mb-20 bg-black p-8 text-white slide-in-section">
-      <h2 className="text-3xl font-bold mb-6 slide-in">⚡ About Me</h2>
+    <section id="about" className="mb-20 bg-black p-4 md:p-8 text-white slide-in-section overflow-x-hidden">
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 slide-in">⚡ About Me</h2>
       <div className="flex flex-col md:flex-row items-center slide-in">
-        <div className="text-md md:flex-1 mb-6 md:mb-0 leading-relaxed">
+        <div className="text-sm md:text-lg md:flex-1 mb-6 md:mb-0 leading-relaxed">
           <p>
             Inspired by Elliot Alderson in &quot;Mr. Robot,&quot; my journey in coding began with a fascination for the power and potential of technology. Originally on a pre-med track, I discovered my passion for coding and transitioned into software development. With three years of hands-on experience, I specialize in building robust, scalable applications.
           </p>
