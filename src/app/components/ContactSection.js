@@ -20,7 +20,7 @@ const ContactSection = () => {
           LinkedIn
         </a>
         <a
-          href="mailto:email@example.com"
+          href="mailto:waleedshoaib20@gmail.com"
           className="bg-gray-800 px-6 py-3 rounded-md text-white hover:bg-gray-700 transition duration-300 ease-in-out flex items-center justify-center md:justify-start"
         >
           <FaEnvelope className="mr-2" /> 
