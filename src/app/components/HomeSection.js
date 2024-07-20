@@ -26,8 +26,13 @@ const HomeSection = () => {
         Software Engineer.
         <br />
         <span className="text-base md:text-3xl text-gray-400 font-bold">
-        A Computer Science graduate passionate about exploring and solving complex tech challenges
+        A Computer Science graduate passionate about exploring 
         </span>
+        <br />
+        <span className="text-base md:text-3xl text-gray-400 font-bold">
+        and solving complex tech challenges
+        </span>
+      
       </p>
 
       <div className="mt-6">
