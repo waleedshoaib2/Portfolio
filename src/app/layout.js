@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Waleed Shoaib Portfolio",
     images: [
       {
-        url: "https://yourwebsite.com/path-to-image.jpg",
+        url: "https://media.licdn.com/dms/image/D4D03AQGJ8kFyPB6n1Q/profile-displayphoto-shrink_800_800/0/1718558136116?e=1726704000&v=beta&t=8w3wihvnC2VuQCqZdW3qDkf8har6V0qBoLVAtwRS240",
         width: 1200,
         height: 630,
         alt: "Waleed Shoaib - Software Engineer",
