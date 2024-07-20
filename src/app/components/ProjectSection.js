@@ -34,7 +34,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="mb-20 bg-black mt-20 p-4 md:p-8 text-white slide-in-section">
       <h2 className="text-3xl md:text-5xl font-bold text-green-400 mb-8">All Creative Works.</h2>
-      <p className="mb-12">Here's some of my projects that I have worked on.</p>
+      <p className="mb-12">Here&apos;s some of my projects that I have worked on.</p> {/* Escaped the single quote here */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
