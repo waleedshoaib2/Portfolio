@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
         <meta charSet={metadata.charset} />
         <meta name="viewport" content={metadata.viewport} />
         <link rel="icon" href="icon.png" type="image/x-icon" />
+        <link rel="icon" href="icon.png" type="image/png" sizes="16x16" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
