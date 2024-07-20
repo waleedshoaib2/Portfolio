@@ -54,7 +54,7 @@ const HomeSection = () => {
           <FaLinkedin className="mr-2" /> 
           LinkedIn
         </a>
-        <a href="mailto:email@example.com" className="bg-gray-900 px-4 py-2 rounded-md text-white hover:bg-gray-800 hover:text-green-400 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">
+        <a href="mailto:waleedshoaib20@gmail.com" className="bg-gray-900 px-4 py-2 rounded-md text-white hover:bg-gray-800 hover:text-green-400 transition duration-300 ease-in-out flex items-center justify-center md:justify-start">
           <FaEnvelope className="mr-2" /> 
           Email
         </a>
